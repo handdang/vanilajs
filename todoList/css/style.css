@@ -1,0 +1,115 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+a{
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+li{list-style: none;}
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    -webkit-appearance: button;
+    outline: 0;
+}
+body{
+    min-width: 320px;font-size: 14px;color: #242424;
+}
+.todolist {
+    position: relative;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 10%), 0px 8px 20px rgb(0 0 0 / 10%);
+    max-width: 700px;
+    background-color: #fff;
+    margin: 24px auto;
+    padding: 0px 24px 24px;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        margin: 0px -24px;
+        padding: 24px 32px 46px 24px;
+        background: #eee;
+}
+.header-section .datetime .year {    font-size: 16px;font-weight: bold;}
+.header-section .datetime .date {    font-size: 20px;font-weight: bold;}
+.header-section .setting{
+display: flex;
+align-items: center;
+}
+    
+.header-section .setting .goal-percent {font-size: 14px;color: #333;margin:2px 10px 0px 0px;}
+.total-section {
+    background: aliceblue;
+    z-index: 10;
+    padding: 16px;
+    margin-top: -32px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+.total-section ul{display: flex;}
+.total-section ul li {
+    width: 33.3%;
+    text-align: center;
+    
+}
+.body-section{padding-top: 24px;}
+.body-section ul{}
+.body-section ul li {
+    position: relative;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%), 0 8px 20px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding:16px 24px;
+    margin-bottom: 18px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
+}
+.body-section ul li::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: yellowgreen;
+    width: 8px;
+    top: 0px;
+    left: 0px;
+}
+.body-section ul li .info{margin-right: auto;}
+.body-section ul li .info b {margin-bottom: 4px;display: block;font-size: 16px;}
+.body-section ul li .check {
+    margin-right: 16px;
+}
+.body-section ul li .delete{
+    width: 10px;
+    height: 10px;
+    background-color: #eee;
+}
+#none-list-container {
+    display: none;
+    padding: 62px 0px;
+    text-align: center;
+}
+.addList{
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%), 0 8px 20px rgb(0 0 0 / 10%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 54px;
+}
+.addList::before {
+    content: '';
+    background-image: url(../image/plus.svg);
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

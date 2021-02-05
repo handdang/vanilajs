@@ -1,2 +1,75 @@
-<html>
+ <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./script/script.js" async=""></script>
+    </head>
+    <title>vanila.js로 만드는 todoList</title>
+    <body>
+        <div class="todolist">
+            <div class="header-section">
+                <div class="datetime">
+                    <!-- <p class="year">2021</p>
+                    <p class="date">02/05</p> -->
+                </div>
+                <div class="setting">
+                    <div class="goal-percent">&nbsp;</div>
+                    <button class="grid">
+                        <img src="./image/list.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="total-section">
+                <ul >
+                    <li>
+                        <p>합계</p>
+                        <b class="listsum">&nbsp;</b>
+                    </li>
+                    <li>
+                        <p>완료</p>
+                        <b class="complete">&nbsp;</b>
+                    </li>
+                    <li>
+                        <p>미완료</p>
+                        <b class="noncomplete">&nbsp;</b>
+                    </li>
+                </ul>
+            </div>
+            <div class="body-section">
+                <div class="filter">
+
+                </div>
+                <ul class="list-container">
+                    <li class="list">
+                        <div class="check">
+                            <label></label>
+                            <input type="checkbox" name="resolve">
+                        </div>
+                        <div class="info">
+                            <b>미팅1</b>
+                            <p>개발 디자인 일정 산정 미팅</p>
+                        </div>
+                        <button class="delete"></button>
+                    </li>
+                    <li class="list">
+                        <div class="check">
+                            <label></label>
+                            <input type="checkbox" name="resolve">
+                        </div>
+                        <div class="info">
+                            <b>미팅2</b>
+                            <p>개발 디자인 일정 산정 미팅</p>
+                        </div>
+                        <button class="delete"></button>
+                    </li>
+                </ul>
+                <div id="none-list-container">
+                    <p>등록된 리스트가 없습니다</p>
+                </div>
+            </div>
+            <button class="addList"></button>
+        </div>
+    </body>
 </html>
