@@ -1,2 +1,2 @@
-vanila js를 이용해 만든 간단한 todoList 압니다.
+vanila js를 이용해 만든 간단한 todoList 압니다.<br>
 리스트 생성,삭제,정렬,드래그앤드랍 기능이 있습니다.
